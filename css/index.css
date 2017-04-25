@@ -56,6 +56,12 @@ p,li{
 	word-spacing: 3px;
 }
 
+.paper h4{
+	font-size:1.5em;
+	margin:8px 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
 .paper h5{
 	font-size:1.5em;
 	margin:8px 0;
