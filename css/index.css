@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+.main,.wrap{
+	width: 80%;
+	margin: 0 auto;
+}
+.language-selector{
+	display: inline;
+	width: 9%;
+	float: right;
+	padding-right: 2%;
+	margin: 3.3em 0;
+}
+.slide{
+	background-color: #eee;
+	height: 350px;
+}
+.method{
+	 /* width: 96%; */
+	margin: 0 auto; 
+	padding: 10px;
+}
+.method h4{
+	/* border-bottom: 2px solid #99ccff; */
+	color: #99ccff;
+	font-size: 1.6em;
+	margin: 0.6em 0;
+	padding : 0.5em 0;
+}
+
+.method p{
+	font-size: 1em;
+	margin-bottom:0.6em;
+	line-height: 1.4em;
+}
+.tech-list{
+	padding-left:1.5em;
+}
+.tech-list li{
+	font-size: 1em;
+	margin-bottom: 1.5em;
+	
+}
+p,li{
+	color:#6D6767;
+	word-spacing:3px;
+}
+.row{
+	margin-top:3em;
+}
+.main{
+	min-height: 22em;
+}
