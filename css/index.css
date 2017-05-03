@@ -35,10 +35,15 @@
 }
 .tech-list{
 	padding-left:1.5em;
+	margin: 1em;
 }
 .tech-list li{
 	font-size: 1em;
 	margin-bottom: 1.5em;
+	
+}
+.tech-list li a{
+	font-weight: bold;
 	
 }
 p,li{
@@ -76,7 +81,9 @@ p,li{
 	/* font-family:"Times New Roman"; */
 }
 
-.paper ul,ol{
-	
-	margin:0;
+
+.dwn-class-title{
+	/*  border-bottom: 1px solid #99ccff; */
+	 padding-bottom: 10px;
+	 margin: 30px 0;
 }
