@@ -15,10 +15,13 @@
 <link href="css/index.css" rel='stylesheet' type='text/css' />
 <!-- Font Style File -->
 <link href="css/font.css" rel='stylesheet' type='text/css' />
-<!-- <link rel="stylesheet" href="css/flexslider.css" type="text/css"
-	media="screen" />
-<link rel="stylesheet" href="css/chocolat.css" type="text/css"
-	media="screen"> -->
+<!-- Style of Slide -->
+<link href="css/lightslider.css" rel="stylesheet" type="text/css" />
+<style>
+li img{
+	width: 100%;
+}	
+</style>
 </head>
 <body>
 	<!-- header -->
@@ -68,7 +71,24 @@
 	<div class="about">
 		<div class="col-md-8">
 			<div class="slide">
-				<img src="" alt="图片">
+				<ul id="imageGallery">
+				  <li>
+				    <img src="images/ba.jpg" /> 
+				  </li>
+				  <li>
+				    <img src="images/ma2.jpeg" />
+				  </li>
+				  <li>
+				    <img src="images/ba5.jpeg" />
+				  </li>
+				  <li>
+				    <img src="images/glx2.jpeg" />
+				  </li>
+				  <li>
+				    <img src="images/glx3.jpeg" />
+				  </li>
+
+				</ul>
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -115,39 +135,36 @@
 				<p>Micro blood-vessel analysis and breath analysis are the
 					methods we invest for the development of early disease detection.</p>
 			</div>
-			<div class="method">
-				<h4>1.&ensp;Micro Blood-Vessel Analysis</h4>
-				<p>It has been developed in Germany and Switzerland and widely
+			<br>
+			  <div class="col-md-6">
+			    <div class="thumbnail">
+			      <img src="images/ma.jpg" alt="Micro Blood-Vessel Analysis">
+			      <div class="caption method">
+			        <h4>Micro Blood-Vessel Analysis</h4>
+			        <p>It has been developed in Germany and Switzerland and widely
 					used for general diagnostics and preventive medicine. In addition
 					to detecting eye problem, precise prediction about cardiovascular
 					problems can be made 5-15 years ahead of actual breakout of the
-					illness, giving ample time to implement corrective measures.</p>
-				<p>Early-generation equipment is already on the market, but it
-					is still mainly used in ophthalmology; only a few research
-					institutes have begun to use the equipment for general
-					cardiovascular analysis and disease prevention.</p>
-				<p>Our aim is Introducing this technology to Chinese research
-					centers (and eventually to the generally market) and to further
-					improve and develop the hardware/firmware in China, to make it
-					smaller and cheaper, and also easier to use.</p>
-				<h4>2.&ensp;Breath Analysis</h4>
-				<p>Breath analysis has been mainly developed at ETH Zurich
+					illness, giving ample time to implement corrective measures...<a href="technology.html#rmbba" class="btn-sm btn-main" role="button">more</a> </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-md-6">
+			    <div class="thumbnail">
+			      <img src="images/ma3.jpg" alt="Breath Analysisl">
+			      <div class="caption method">
+			        <h4>Breath Analysisl</h4>
+			        <p>Breath analysis has been mainly developed at ETH Zurich
 					(Eidgenössische Technische Hochschule Zürich) and has now been
 					declared a flagship project between ETH, University of Zurich and
 					other institutions. Our company is closely collaborating with the
 					headscientist to further develop the general technology and special
-					applications.</p>
-				<p>The current equipment us quite large and expensive, as it
-					includes a general-purpose mass spectrograph. There is already on
-					the market an add-on to general-purpose mass spectrum analyzers
-					which allows the detection of minute quantities of particular
-					molecules; We have obtained the right to market this product in
-					China and we intend to bring some demo units here whenever
-					feasible.</p>
-				<p>In next phases, monitoring equipment for the exact dosage of
-					chemotherapy medication, early lung cancer detection equipment,
-					drug abuse detection equipment and several other special
-					applications will be developed.</p>
+					applications...<a href="technology.html#cba" class="btn-sm btn-main" role="button">more</a></p>
+			      </div>
+			    </div>
+			  </div>
+
+			<div class="clearfix>"</div>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -190,6 +207,17 @@
 	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
 	<script type="text/javascript" src="js/jquery.chocolat.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/lightslider.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+	    $('#imageGallery').lightSlider({
+	        adaptiveHeight:true,
+	        item:1,
+	        slideMargin:0,
+	        loop:true   
+	    });  
+	  });
+	</script>
 	<!-- scripts -->
 </body>
 </html>

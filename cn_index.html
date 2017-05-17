@@ -15,10 +15,13 @@
 <link href="css/index.css" rel='stylesheet' type='text/css' />
 <!-- Font Style File -->
 <link href="css/font.css" rel='stylesheet' type='text/css' />
-<!-- <link rel="stylesheet" href="css/flexslider.css" type="text/css"
-	media="screen" />
-<link rel="stylesheet" href="css/chocolat.css" type="text/css"
-	media="screen"> -->
+<!-- Style of Slide -->
+<link href="css/lightslider.css" rel="stylesheet" type="text/css" />
+<style>
+li img{
+	width: 100%;
+}	
+</style>
 </head>
 <body>
 	<!-- header -->
@@ -68,7 +71,24 @@
 	<div class="about">
 		<div class="col-md-8">
 			<div class="slide">
-				<img src="" alt="图片">
+				<ul id="imageGallery">
+				  <li>
+				    <img src="images/ba.jpg" /> 
+				  </li>
+				  <li>
+				    <img src="images/ma2.jpeg" />
+				  </li>
+				  <li>
+				    <img src="images/ba5.jpeg" />
+				  </li>
+				  <li>
+				    <img src="images/glx2.jpeg" />
+				  </li>
+				  <li>
+				    <img src="images/glx3.jpeg" />
+				  </li>
+
+				</ul>
 			</div>
 		</div>
 		<div class="col-md-4">
@@ -107,15 +127,27 @@
 				<h3>方法</h3>
 				<p>我们研究疾病早期诊断的方法主要是微血管分析和呼吸分析</p>
 			</div>
-			<div class="method">
-				<h4>1.&nbsp;微血管分析</h4>
-				<p>德国和瑞士已经对微血管分析技术进行了深度研发，并且，这项技术现在越来越广泛的应用在普通诊断和预防医疗上。除了探测眼部疾病外，在心血管问题上，早在疾病突发的5年到15年前，就可以做出精确的预测，从而给实施治疗方案留出了充裕的时间。</p>
-				<p>先期的设备已经投入市场，但主要应用还局限在眼科上；只有少数几个研究机构开始把这个设备用在普遍新血管分析和疾病预防上。</p>
-				<p>我们的目标是将这项技术引进到中国的研究中心（最终投入市场），继续在中国改进和发展这项技术的硬件和固件，把它变得更便携更便宜，也更易于使用。</p>
-				<h4>2.&nbsp;呼吸分析</h4>
-				<p>呼吸分析的研发主要是在苏黎世联邦理工学院进行，并且现在已经发布了一个由苏黎世联邦理工学院，苏黎世大学和其他研究机构共同进行的旗舰项目。我们公司与首席科学家密切合作，深入研发其基本技术及其特定应用。</p>
-				<p>现行的设备比较庞大且价格昂贵，因为它包含一个通用质谱仪。市场上已经存在通用质谱仪质量分析的插件，并用于检测微量的特定分子。我们已经获得了将该产品在中国市场化的资格，也可以在任何可行的时间带来一些演示用的零部件。</p>
-				<p>在下一阶段，化疗药物精确计量的监控设备，早期肺癌检测设备，药物滥用监测设备和一些其他研究是我们将要进行研发的特定应用。</p>
+			<br>
+			  <div class="col-md-6">
+			    <div class="thumbnail">
+			      <img src="images/ma.jpg" alt="Micro Blood-Vessel Analysis">
+			      <div class="caption method">
+			        <h4>微血管分析</h4>
+			        <p>德国和瑞士已经对微血管分析技术进行了深度研发，并且，这项技术现在越来越广泛的应用在普通诊断和预防医疗上。除了探测眼部疾病外，在心血管问题上，早在疾病突发的5年到15年前，就可以做出精确的预测，从而给实施治疗方案留出了充裕的时间。<a href="technology.html#rmbba" class="btn-sm btn-main" role="button">more</a> </p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-md-6">
+			    <div class="thumbnail">
+			      <img src="images/ma3.jpg" alt="Breath Analysisl">
+			      <div class="caption method">
+			        <h4>呼吸分析</h4>
+			        <p>呼吸分析的研发主要是在苏黎世联邦理工学院进行，并且现在已经发布了一个由苏黎世联邦理工学院，苏黎世大学和其他研究机构共同进行的旗舰项目。我们公司与首席科学家密切合作，深入研发其基本技术及其特定应用。<a href="technology.html#cba" class="btn-sm btn-main" role="button">more</a></p>
+			      </div>
+			    </div>
+			  </div>
+
+			<div class="clearfix>"</div>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -158,6 +190,17 @@
 	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
 	<script type="text/javascript" src="js/jquery.chocolat.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/lightslider.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+	    $('#imageGallery').lightSlider({
+	        adaptiveHeight:true,
+	        item:1,
+	        slideMargin:0,
+	        loop:true   
+	    });  
+	  });
+	</script>
 	<!-- scripts -->
 </body>
 </html>
